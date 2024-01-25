@@ -3,18 +3,8 @@ from qdrant_client import QdrantClient
 from fastembed.embedding import FlagEmbedding as Embedding
 import numpy as np
 # Example list of documents
-documents: List[str] = [
-    "Maharana Pratap was a Rajput warrior king from Mewar",
-    "He fought against the Mughal Empire led by Akbar",
-    "The Battle of Haldighati in 1576 was his most famous battle",
-    "He refused to submit to Akbar and continued guerrilla warfare",
-    "His capital was Chittorgarh, which he lost to the Mughals",
-    "He died in 1597 at the age of 57",
-    "Maharana Pratap is considered a symbol of Rajput resistance against foreign rule",
-    "His legacy is celebrated in Rajasthan through festivals and monuments",
-    "He had 11 wives and 17 sons, including Amar Singh I who succeeded him as ruler of Mewar",
-    "His life has been depicted in various films, TV shows, and books",
-]
+documents: List[str] = ['Acute bronchitis', 'Asthma', 'Cancer of the breast', 'Cancer of the colon', 'Cancer of the lung']
+
 # Initialize the DefaultEmbedding class with the desired parameters
 embedding_model = Embedding(model_name="BAAI/bge-small-en", max_length=512)
 
