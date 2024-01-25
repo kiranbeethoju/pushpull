@@ -6,7 +6,7 @@ def getEntities(classifier, input_text):
     # Combine words into a single string
     if len(lst)!=0:
         combined_words = []
-        for i in range(len(out)):
+        for i in range(len(lst)):
             if lst[i]['tag'] == 'B-problem':
                 combined_words.append(lst[i]['entity'])
             elif lst[i]['tag'] == 'I-problem':
