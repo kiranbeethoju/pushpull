@@ -1,7 +1,7 @@
 from typing import List
 from qdrant_client import QdrantClient
 from fastembed.embedding import FlagEmbedding as Embedding
-
+import numpy as np
 # Example list of documents
 documents: List[str] = [
     "Maharana Pratap was a Rajput warrior king from Mewar",
