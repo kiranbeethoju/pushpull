@@ -14,7 +14,7 @@ embeddings: List[np.ndarray] = list(
 )  # notice that we are casting the generator to a list
 
 print(embeddings[0].shape, len(embeddings))
-query = "Who was Maharana Pratap?"
+query = "Asthama"
 query_embedding = list(embedding_model.query_embed(query))[0]
 plain_query_embedding = list(embedding_model.embed(query))[0]
 
